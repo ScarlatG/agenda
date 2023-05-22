@@ -11,6 +11,7 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
 import it.prova.agenda.model.Utente;
+import it.prova.agenda.security.dto.UtenteInfoJWTResponseDTO;
 import it.prova.agenda.service.utente.UtenteService;
 
 @RestController
