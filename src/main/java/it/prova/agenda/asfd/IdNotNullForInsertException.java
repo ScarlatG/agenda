@@ -1,4 +1,4 @@
-package it.prova.agenda.web.api.exception;
+package it.prova.agenda.asfd;
 
 public class IdNotNullForInsertException extends RuntimeException {
 

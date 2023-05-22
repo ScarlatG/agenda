@@ -7,12 +7,12 @@ import org.springframework.security.core.context.SecurityContextHolder;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
 
+import it.prova.agenda.asfd.PermessoNegatoException;
+import it.prova.agenda.asfd.UtenteLoggatoNotFoundException;
 import it.prova.agenda.model.Agenda;
 import it.prova.agenda.model.Utente;
 import it.prova.agenda.repository.agenda.AgendaRepository;
 import it.prova.agenda.service.utente.UtenteService;
-import it.prova.agenda.web.api.exception.PermessoNegatoException;
-import it.prova.agenda.web.api.exception.UtenteLoggatoNotFoundException;
 
 @Service
 @Transactional(readOnly = true)
