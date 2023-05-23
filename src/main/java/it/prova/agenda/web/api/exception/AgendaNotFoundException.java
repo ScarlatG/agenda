@@ -1,4 +1,4 @@
-package it.prova.agenda.asfd;
+package it.prova.agenda.web.api.exception;
 
 public class AgendaNotFoundException extends RuntimeException {
 

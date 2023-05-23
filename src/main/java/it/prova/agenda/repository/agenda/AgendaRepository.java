@@ -11,5 +11,5 @@ public interface AgendaRepository extends CrudRepository<Agenda, Long> {
 
 	List<Agenda> findByUtente(Utente utente);
 
-	List<Agenda> findAllWhereUtente(Utente utenteLoggato);
+	List<Agenda> findAllByUtente(Utente utenteLoggato);
 }

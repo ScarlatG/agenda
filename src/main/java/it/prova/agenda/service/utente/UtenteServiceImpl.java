@@ -1,6 +1,6 @@
 package it.prova.agenda.service.utente;
 
-import java.util.Date;
+import java.time.LocalDate;
 import java.util.List;
 
 import org.springframework.beans.factory.annotation.Autowired;
@@ -51,7 +51,7 @@ public class UtenteServiceImpl implements UtenteService {
 	public void inserisciNuovo(Utente utenteInstance) {
 		utenteInstance.setStato(StatoUtente.CREATO);
 		utenteInstance.setPassword(passwordEncoder.encode(utenteInstance.getPassword()));
-		utenteInstance.setDateCreated(new Date());
+		utenteInstance.setDateCreated(LocalDate.now());
 		repository.save(utenteInstance);
 	}
 
@@ -74,6 +74,7 @@ public class UtenteServiceImpl implements UtenteService {
 		return repository.findByUsernameAndPassword(username, password);
 	}
 
+	@Override
 	@Transactional
 	public void changeUserAbilitation(Long utenteInstanceId) {
 		Utente utenteInstance = caricaSingoloUtente(utenteInstanceId);

@@ -13,15 +13,15 @@ import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
-import it.prova.agenda.asfd.AgendaNotFoundException;
-import it.prova.agenda.asfd.IdNotNullForInsertException;
-import it.prova.agenda.asfd.UtenteLoggatoNotFoundException;
 import it.prova.agenda.dto.AgendaDTO;
 import it.prova.agenda.dto.UtenteDTO;
 import it.prova.agenda.model.Agenda;
 import it.prova.agenda.model.Utente;
 import it.prova.agenda.service.agenda.AgendaService;
 import it.prova.agenda.service.utente.UtenteService;
+import it.prova.agenda.web.api.exception.AgendaNotFoundException;
+import it.prova.agenda.web.api.exception.IdNotNullForInsertException;
+import it.prova.agenda.web.api.exception.UtenteLoggatoNotFoundException;
 
 @RestController
 @RequestMapping("/api/agenda")

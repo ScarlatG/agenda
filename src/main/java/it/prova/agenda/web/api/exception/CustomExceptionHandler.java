@@ -1,4 +1,4 @@
-package it.prova.agenda.asfd;
+package it.prova.agenda.web.api.exception;
 
 import java.time.LocalDateTime;
 import java.util.LinkedHashMap;
